@@ -479,6 +479,7 @@ function speak(e) {
     e.stopPropagation();
     const s = new SpeechSynthesisUtterance(cur[idx].w);
     s.lang = 'en-US';
+    s.rate = 0.85;
     window.speechSynthesis.speak(s);
 }
 
@@ -489,3 +490,4 @@ sync();
 </body>
 
 </html>
+
